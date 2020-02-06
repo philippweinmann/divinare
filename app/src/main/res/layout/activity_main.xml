@@ -34,11 +34,53 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="210dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:onClick="generateRandomRestaurantClicked"
+        android:text="@string/GenerateButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/RestaurantSuggestion"
+        android:layout_width="172dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/LocationLink"
+        android:layout_width="169dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="8dp"
+        android:autoLink="web"
+        android:textColorLink="@color/orange"
+        app:layout_anchor="@+id/view_pager"
+        app:layout_anchorGravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/RestaurantSuggestion"
+        app:layout_constraintStart_toStartOf="@+id/RestaurantSuggestion"
+        app:layout_constraintTop_toBottomOf="@+id/RestaurantSuggestion" />
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

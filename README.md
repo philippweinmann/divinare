@@ -1,7 +1,7 @@
-# RestaurantPicker
+# divinare
 
 An android app created in Android studio which chooses a restaurant to go to.
-This is still a WIP. Feel free to use.
+This is still a WIP. The name is latin for prophecy/vision.
 
 ## Motivation
 
